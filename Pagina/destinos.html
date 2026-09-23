@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos - Rutas del Perú</title>
+    
+    <!-- Rutas subiendo un nivel hacia Style -->
+    <link rel="stylesheet" href="../Style/main.css">
+    <link rel="stylesheet" href="../Style/destinos.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN GLOBAL -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../img/logo sin fondo.png" alt="Rutas del Perú Logo">
+            </a>
+        </div>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+            ☰
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="../index.html" class="nav-link">Inicio</a></li>
+            <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+            <li><a href="destinos.html" class="nav-link active">Destinos</a></li>
+            <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- CABECERA DE LA PÁGINA -->
+        <section class="destinos-hero">
+            <h1>Nuestros Destinos y Full Days</h1>
+            <p>Explora todas las rutas y escapadas que tenemos preparadas para ti</p>
+        </section>
+
+        <!-- FILTROS Y CATÁLOGO COMPLETO -->
+        <section class="seccion-tours">
+            
+            <!-- Botones de Filtro por Categoría -->
+            <div class="filtros-container">
+                <button class="btn-filtro active" data-categoria="todos">Todos</button>
+                <button class="btn-filtro" data-categoria="popular">Más Vendidos</button>
+                <button class="btn-filtro" data-categoria="naturaleza">Naturaleza</button>
+                <button class="btn-filtro" data-categoria="aventura">Aventura</button>
+            </div>
+
+            <!-- Grilla Principal con Todos los Tours -->
+            <div class="tours-grid-completo">
+                
+                <!-- TARJETA 1 -->
+                <article class="tour-card" data-categoria="popular">
+                    <div class="tour-imagen">
+                        <span class="badge badge-popular">Más Vendido</span>
+                        <img src="../img/Oasis HUacachina.jpg" alt="Full Day Paracas + Oasis Huacachina">
+                    </div>
+                    <div class="tour-info">
+                        <h3>Full Day Paracas + Ica + Oasis Huacachina</h3>
+                        <p class="tour-duracion">⏱️ Día completo (4:00 a. m. – 10:00 p. m.)</p>
+                        <p class="tour-descripcion">
+                            Navega hacia las Islas Ballestas, cata piscos y chocolates en Ica, y vive la adrenalina en los tubulares y sandboard en la Huacachina.
+                        </p>
+                        <div class="tour-precio-box">
+                            <span class="precio-label">Por persona</span>
+                            <span class="precio-monto">S/ 129</span>
+                        </div>
+                        <div class="tour-botones">
+                            <a href="https://wa.me/51903456760" class="btn-itinerario" target="_blank">Reservar</a>
+                            <a href="contacto.html" class="btn-detalles">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TARJETA 2 -->
+                <article class="tour-card" data-categoria="naturaleza">
+                    <div class="tour-imagen">
+                        <span class="badge badge-destacado">Naturaleza</span>
+                        <img src="../img/Huancaya.jpg" alt="Tour Full Day Huancaya">
+                    </div>
+                    <div class="tour-info">
+                        <h3>El Paraíso Natural: Huancaya (Yauyos)</h3>
+                        <p class="tour-duracion">⏱️ Día completo (4:00 a. m. – 10:00 p. m.)</p>
+                        <p class="tour-descripcion">
+                            Camina entre cascadas de agua turquesa, navega por lagunas cristalinas y explora el pintoresco pueblo de Vilca.
+                        </p>
+                        <div class="tour-precio-box">
+                            <span class="precio-label">Por persona</span>
+                            <span class="precio-monto">S/ 189</span>
+                        </div>
+                        <div class="tour-botones">
+                            <a href="https://wa.me/51903456760" class="btn-itinerario" target="_blank">Reservar</a>
+                            <a href="contacto.html" class="btn-detalles">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TARJETA 3 -->
+                <article class="tour-card" data-categoria="aventura">
+                    <div class="tour-imagen">
+                        <span class="badge badge-aventura">Aventura</span>
+                        <img src="../img/Lunaguaná.jpg" alt="Tour Full Lunahuaná">
+                    </div>
+                    <div class="tour-info">
+                        <h3>Full Day Lunahuaná + Canotaje y Cuatrimotos</h3>
+                        <p class="tour-duracion">⏱️ Día completo (5:00 a. m. – 8:00 p. m.)</p>
+                        <p class="tour-descripcion">
+                            Canotaje en el río Cañete, circuito en cuatrimotos, gastronomía local y degustación de vinos y piscos.
+                        </p>
+                        <div class="tour-precio-box">
+                            <span class="precio-label">Por persona</span>
+                            <span class="precio-monto">S/ 99</span>
+                        </div>
+                        <div class="tour-botones">
+                            <a href="https://wa.me/51903456760" class="btn-itinerario" target="_blank">Reservar</a>
+                            <a href="contacto.html" class="btn-detalles">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TARJETA 4 -->
+                <article class="tour-card" data-categoria="naturaleza">
+                    <div class="tour-imagen">
+                        <span class="badge badge-destacado">Naturaleza</span>
+                        <img src="../img/lachay.jpg" alt="Full Day Lomas de Lachay">
+                    </div>
+                    <div class="tour-info">
+                        <h3>Full Day Lomas de Lachay + Castillo de Chancay</h3>
+                        <p class="tour-duracion">⏱️ Día completo (6:00 a. m. – 7:00 p. m.)</p>
+                        <p class="tour-descripcion">
+                            Senderismo por la Reserva Nacional Lomas de Lachay y recorrido cultural por el histórico Castillo de Chancay.
+                        </p>
+                        <div class="tour-precio-box">
+                            <span class="precio-label">Por persona</span>
+                            <span class="precio-monto">S/ 85</span>
+                        </div>
+                        <div class="tour-botones">
+                            <a href="https://wa.me/51903456760" class="btn-itinerario" target="_blank">Reservar</a>
+                            <a href="contacto.html" class="btn-detalles">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TARJETA 5 -->
+                <article class="tour-card" data-categoria="aventura">
+                    <div class="tour-imagen">
+                        <span class="badge badge-aventura">Aventura</span>
+                        <img src="../img/songos.jpg" alt="Full Day Toboganes de Songos">
+                    </div>
+                    <div class="tour-info">
+                        <h3>Full Day Toboganes Naturales de Songos</h3>
+                        <p class="tour-duracion">⏱️ Día completo (6:30 a. m. – 7:30 p. m.)</p>
+                        <p class="tour-descripcion">
+                            Trekking por quebradas, caminata sobre agua y deslizamiento por los famosos toboganes de piedra naturales.
+                        </p>
+                        <div class="tour-precio-box">
+                            <span class="precio-label">Por persona</span>
+                            <span class="precio-monto">S/ 79</span>
+                        </div>
+                        <div class="tour-botones">
+                            <a href="https://wa.me/51903456760" class="btn-itinerario" target="_blank">Reservar</a>
+                            <a href="contacto.html" class="btn-detalles">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- ARCHIVO JAVASCRIPT GLOBAL -->
+    <script src="../JavaScript/main.js"></script>
+</body>
+</html>

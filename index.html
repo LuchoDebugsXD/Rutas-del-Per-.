@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutas del Perú - Inicio</title>
+    
+    <!-- Hojas de estilo modularizadas -->
+    <link rel="stylesheet" href="Style/main.css">
+    <link rel="stylesheet" href="Style/inicio.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN GLOBAL -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo sin fondo.png" alt="Rutas del Perú Logo">
+            </a>
+        </div>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+            ☰
+        </button>
+
+        <!-- Hipervínculos a las páginas de la carpeta Pagina -->
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html" class="nav-link active">Inicio</a></li>
+            <li><a href="Pagina/nosotros.html" class="nav-link">Nosotros</a></li>
+            <li><a href="Pagina/destinos.html" class="nav-link">Destinos</a></li>
+            <li><a href="Pagina/contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- SECCIÓN INICIO (HERO BANNER) -->
+        <section id="inicio" class="hero-banner">
+            <div class="overlay"></div>
+            <div class="hero-contenido">
+                <h1>Escápate de la Rutina sin Salir de Lima</h1>
+                <p>Descubre paisajes asombrosos, gastronomía local y aventura extrema en nuestros Full Days.</p>
+                <a href="Pagina/destinos.html" class="btn-hero">Ver Todos los Destinos</a>
+            </div>
+        </section>
+        <!-- SECCIÓN NOSOTROS -->
+        <section class="seccion-nosotros">
+            <div class="nosotros-container">
+                <div class="nosotros-texto">
+                    <h2>Somos Rutas del Perú</h2>
+                    <div class="linea-decorativa"></div>
+                    
+                    <p class="descripcion-principal">
+                        En Rutas del Perú no solo vendemos tours; creamos recuerdos. Nacimos con la misión 
+                        de descentralizar el turismo limeño, mostrando que no se necesita viajar miles de kilómetros 
+                        para encontrar el paraíso.
+                    </p>
+
+                    <ul class="datos-lista">
+                        <li><strong>Misión:</strong> Brindar experiencias turísticas de alta calidad que promuevan la cultura local.</li>
+                        <li><strong>Garantía:</strong> Registrados y acreditados como una agencia seria, formal y responsable.</li>
+                        <li>Más de 5 mil reseñas y testimonios nos respaldan.</li>
+                    </ul>
+
+                    <a href="Pagina/nosotros.html" class="btn-detalles" style="display: inline-block; margin-top: 15px; padding: 10px 25px; max-width: 200px;">Conócenos Más</a>
+                </div>
+
+                <div class="nosotros-imagen">
+                    <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?q=80&w=800" alt="Rutas del Perú Experiencia">
+                </div>
+            </div>
+        </section>
+
+        <!-- ADELANTO DE FULL DAYS RECOMENDADOS (CARRUSEL DE INICIO) -->
+        <section class="seccion-tours">
+            <div class="tours-header">
+                <h2>Full Days Recomendados</h2>
+                <div class="linea-decorativa-centro"></div>
+                <p>Las escapadas preferidas por nuestros viajeros este fin de semana</p>
+            </div>
+
+            <div class="carrusel-wrapper">
+                <button class="carrusel-btn prev-btn" id="prevBtn" aria-label="Anterior">❮</button>
+
+                <div class="tours-carrusel-container" id="carruselContainer">
+                    <div class="tours-grid">
+                        
+                        <!-- TARJETA 1 -->
+                        <article class="tour-card">
+                            <div class="tour-imagen">
+                                <span class="badge badge-popular">Más Vendido</span>
+                                <img src="img/Oasis HUacachina.jpg" alt="Full Day Paracas + Oasis Huacachina">
+                            </div>
+                            <div class="tour-info">
+                                <h3>Full Day Paracas + Ica + Oasis Huacachina</h3>
+                                <p class="tour-duracion">⏱️ Día completo (4:00 a. m. – 10:00 p. m.)</p>
+                                <p class="tour-descripcion">
+                                   Islas Ballestas en Paracas, cata de piscos en Ica y tubulares con sandboard en las dunas de la Huacachina.
+                                </p>
+                                <div class="tour-precio-box">
+                                    <span class="precio-label">Por persona</span>
+                                    <span class="precio-monto">S/ 129</span>
+                                </div>
+                                <div class="tour-botones">
+                                    <a href="https://wa.me/51903456760" class="btn-itinerario" target="_blank">Reservar</a>
+                                    <a href="Pagina/destinos.html" class="btn-detalles">Más Info</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- TARJETA 2 -->
+                        <article class="tour-card">
+                            <div class="tour-imagen">
+                                <span class="badge badge-destacado">Naturaleza</span>
+                                <img src="img/Huancaya.jpg" alt="Tour Full Day Huancaya">
+                            </div>
+                            <div class="tour-info">
+                                <h3>El Paraíso Natural: Huancaya (Yauyos)</h3>
+                                <p class="tour-duracion">⏱️ Día completo (4:00 a. m. – 10:00 p. m.)</p>
+                                <p class="tour-descripcion">
+                                   Camina entre hermosas cascadas de agua turquesa, navega por lagunas cristalinas y explora el pueblo de Vilca.
+                                </p>
+                                <div class="tour-precio-box">
+                                    <span class="precio-label">Por persona</span>
+                                    <span class="precio-monto">S/ 189</span>
+                                </div>
+                                <div class="tour-botones">
+                                    <a href="https://wa.me/51903456760" class="btn-itinerario" target="_blank">Reservar</a>
+                                    <a href="Pagina/destinos.html" class="btn-detalles">Más Info</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- TARJETA 3 -->
+                        <article class="tour-card">
+                            <div class="tour-imagen">
+                                <span class="badge badge-aventura">Aventura</span>
+                                <img src="img/Lunaguaná.jpg" alt="Tour Full Lunahuaná">
+                            </div>
+                            <div class="tour-info">
+                                <h3>Full Day Lunahuaná + Canotaje y Cuatrimotos</h3>
+                                <p class="tour-duracion">⏱️ Día completo (5:00 a. m. – 8:00 p. m.)</p>
+                                <p class="tour-descripcion">
+                                    Adrenalina pura haciendo canotaje en el río Cañete, cuatrimotos, sol constante y degustación de vinos.
+                                </p>
+                                <div class="tour-precio-box">
+                                    <span class="precio-label">Por persona</span>
+                                    <span class="precio-monto">S/ 99</span>
+                                </div>
+                                <div class="tour-botones">
+                                    <a href="https://wa.me/51903456760" class="btn-itinerario" target="_blank">Reservar</a>
+                                    <a href="Pagina/destinos.html" class="btn-detalles">Más Info</a>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <button class="carrusel-btn next-btn" id="nextBtn" aria-label="Siguiente">❯</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- ARCHIVO JAVASCRIPT GLOBAL -->
+    <script src="JavaScript/main.js"></script>
+</body>
+</html>

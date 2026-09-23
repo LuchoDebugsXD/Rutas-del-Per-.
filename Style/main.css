@@ -1,0 +1,221 @@
+/* ==========================================
+   1. RESET Y ESTILOS GLOBALES
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+main {
+    margin-top: 90px; /* Compensación por la Navbar fija */
+}
+
+/* ==========================================
+   2. BARRA DE NAVEGACIÓN (NAVBAR)
+   ========================================== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Clase activada con JS al hacer scroll */
+.navbar.scrolled {
+    background: rgba(0, 0, 0, 0.95);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logo img {
+    height: 65px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ff4d4d;
+    font-weight: 700;
+}
+
+/* Botón Hamburguesa (Oculto en Computadoras) */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* ==========================================
+   3. BOTONES GENERALES DE ACCIÓN
+   ========================================== */
+.btn-itinerario, .btn-detalles {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-itinerario {
+    background-color: #25d366; /* Verde WhatsApp */
+    color: #ffffff;
+}
+
+.btn-itinerario:hover {
+    background-color: #1ebd56;
+}
+
+.btn-detalles {
+    background-color: #d92323; /* Rojo institucional */
+    color: #ffffff;
+}
+
+.btn-detalles:hover {
+    background-color: #b01b1b;
+}
+
+/* ==========================================
+   4. RESPONSIVE PARA CELULARES (NAVBAR)
+   ========================================== */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 90px;
+        left: -100%;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.95);
+        width: 100%;
+        text-align: center;
+        padding: 25px 0;
+        gap: 20px;
+        transition: left 0.3s ease;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
+/* ==========================================
+   ESTILOS DE LA SECCIÓN NOSOTROS
+   ========================================== */
+.seccion-nosotros {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 80px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 1200px;
+    align-items: center;
+}
+
+.nosotros-texto h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.linea-decorativa {
+    width: 60px;
+    height: 4px;
+    background-color: #d92323;
+    margin-bottom: 25px;
+    border-radius: 2px;
+}
+
+.descripcion-principal {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #555555;
+    margin-bottom: 25px;
+}
+
+.datos-lista {
+    list-style: none;
+}
+
+.datos-lista li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #444444;
+    margin-bottom: 12px;
+}
+
+.datos-lista li strong {
+    color: #1a1a1a;
+}
+
+.nosotros-imagen img {
+    width: 100%;
+    height: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 992px) {
+    .nosotros-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
